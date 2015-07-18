@@ -1,0 +1,27 @@
+{
+  "name": "khusainova",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat-css": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat-css": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElinaWeb/MyPortfolio.git"
+  },
+  "author": "Khusainova Elina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElinaWeb/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/ElinaWeb/MyPortfolio#readme"
+}
