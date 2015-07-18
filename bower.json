@@ -1,0 +1,18 @@
+{
+  "name": "Тестовое задание Хусаиновой Э",
+  "version": "0.0.0",
+  "authors": [
+    "Khusainova Elina"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}
