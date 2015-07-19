@@ -1,5 +1,5 @@
 html {
-  background-image: url("../images/comppattern2.png");
+  background-image: url("images/comppattern2.png");
 }
 
 body {
@@ -31,12 +31,12 @@ body {
   color: #4a545d;
   text-align: center;
   height: 33px;
-  padding: 23 0 23 0;
-  margin-top: 34;
+  padding: 23px 0px 23px 0px;
+  margin-top: 34px;
 }
 
 #login {
-  margin-left: 255;
+  margin-left: 255px;
   float: left;
 }
 
@@ -44,7 +44,7 @@ body {
   margin: 0;
   font: 13px fira_sanslight, sans-serif;
   line-height: 13px;
-  padding: 10 0 10 0;
+  padding: 10px 0px 10px 0px;
 }
 
 #menu {
@@ -70,7 +70,7 @@ body {
   font: 23px fira_sansbook, sans-serif;
   text-decoration: none;
   line-height: 23px;
-  padding: 23 0 23 28;
+  padding: 23px 0px 23px 28px;
 }
 
 #menu ul li:first-child a {
@@ -147,10 +147,10 @@ body {
 }
 
 .block {
-  margin-top: 26;
+  margin-top: 26px;
   width: 650px;
   background-color: #eff3f7;
-  padding-bottom: 22;
+  padding-bottom: 22px;
 }
 
 .headerBlock {
@@ -166,25 +166,34 @@ body {
 
 .block ul {
   padding-left: 0;
-  margin-top: 27;
+  margin-top: 27px;
   margin-bottom: 0;
-}
-
-.block ul li {
-  padding-left: 0;
-  list-style: none;
-  margin-left: 0;
 }
 
 #imgWork {
   float: left;
-  margin-left: 58;
+  margin-left: 58px;
 }
 
 .paragraph {
-  padding-left: 0;
+  padding-left: 124px;
   list-style: none;
-  margin-left: 124;
+  background-position: 58px top;
+}
+
+.paragraph.work {
+  background-image: url("../images/work.png");
+  background-repeat: no-repeat;
+}
+
+.paragraph.study {
+  background-image: url("../images/study.png");
+  background-repeat: no-repeat;
+}
+
+.paragraph.course {
+  background-image: url("../images/course.png");
+  background-repeat: no-repeat;
 }
 
 .headerParagraph {
@@ -204,5 +213,5 @@ body {
 }
 
 #block2 {
-  margin: 26 0 82 0px;
+  margin: 26px 0 82px 0;
 }
