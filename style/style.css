@@ -1,5 +1,5 @@
 html{
-	background-image: url("./images/comppattern2.png");
+	background-image: url("../images/comppattern2.png");
 }
 
 body{
@@ -153,10 +153,33 @@ body{
 	border-bottom: 2px solid #3ba8c0;
 }
 
+.headerBlock.block1{
+	width: 342px;	
+}
+
+.info{
+	margin: 24px 0 46px 228px;
+}
+
+.headerInfo{
+	float: left;
+	margin: 0 16px 15px 0;
+	font: 17px fira_sansmedium, sans-serif;
+	color:#4a545d;
+	line-height: 17px;
+}
+
+.textInfo{
+	margin: 0 0 15px 0;
+	font: 15px fira_sansbook, sans-serif;
+	color:#37424d;
+	line-height: 17px;
+}
 .block ul {
 	padding-left: 0;	
 	margin-top: 27px;
 	margin-bottom: 0;
+	list-style: none;
 }
 
 #imgWork{
@@ -166,7 +189,6 @@ body{
 
 .paragraph {
 	padding-left: 124px;
-	list-style: none;
 	background-position: 58px top;
 }
 .paragraph.work {
