@@ -1,8 +1,18 @@
-var gulp = require('gulp');
-var concatCss = require('gulp-concat-css');
- 
-gulp.task('default', function () {
-  return gulp.src('style/*.css')
-    .pipe(concatCss("bundle.css"))
-    .pipe(gulp.dest('app/'));
+var gulp=require("gulp"),
+browserSync=require('browser-sync');
+gulp.task('server',function(){
+	browserSync({
+		port:9000,
+		server:{
+			baseDir:'app'
+		}
+	})
+})
+gulp.task('watch',function(){
+	gulp.watch([
+		'app/*.html',
+		'app/js/*.js',
+		'app/css/*.css'
+		]).on('change',browserSync.reload);
 });
+gulp.task('default',['server','watch']);
