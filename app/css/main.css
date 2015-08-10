@@ -6,7 +6,7 @@ html{
 .browsehappy{
 	font: 23px fira_sanslight, sans-serif;
 }
-
+/*-------------------------header----------------------------------*/
 header{
 	height: 47px;	
 	padding: 35px 0 35px 0;
@@ -73,6 +73,7 @@ header{
 	background-position: left center; 	
 }
 
+/*-------------------------for all----------------------------------*/
 ul{
 	padding: 0;
 	margin: 0;
@@ -83,9 +84,11 @@ ul li
 	list-style: none;
 }
 
+/*-------------------------menu----------------------------------*/
 .menu{
 	background:#eff3f7;
 	margin-bottom: 23px;
+	border-radius: 3px;
 }
 
 .menu ul li a{
@@ -97,6 +100,7 @@ ul li
 
 .menu ul li:first-child a{
 	border-top: none;
+	border-radius: 3px 3px 0 0;
 }
 
 .menu ul li a.noselectedMenu:hover{
@@ -116,6 +120,11 @@ ul li
 	font: 21px fira_sansbook, sans-serif;
 	line-height: 21px;
 	padding: 25px 0px 25px 28px;
+}
+
+/*-------------------------contacts----------------------------------*/
+.contacts{
+	border-radius: 3px 3px 0 0;
 }
 .contactsHeader {
 	color: #fbfcfd;
@@ -154,18 +163,32 @@ ul li
  	background-repeat: no-repeat;
 }
 
+/*-------------------------wrapperRight----------------------------------*/
+/*-----------for all pages----------------*/
 .wrapperRight{
 	width: 650px;
 	margin-left: 430px;
 
 }
-
 .block{
 	width: 650px;
 	background-color: #eff3f7;
 	padding-bottom: 22px;
 	margin-bottom: 26px;
+	border-radius: 3px 3px 0 0;
 }
+.block ul {
+	padding-left: 0;	
+	margin-top: 27px;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.avatar-info{
+	margin: 24px 0 46px 0;
+	position: relative;
+}
+
 .avatar-box{
 	position: absolute;
 	width: 142px;
@@ -176,11 +199,13 @@ ul li
 	border:5px solid #3ba8c0;
 	margin:-71px 0 0 55px;
 }
-
 .avatar{
 	width: 100%;
 }
 
+.info-box{
+	padding-left:229px;
+}
 .headerBlock{
 	font: 27px fira_sansbook, sans-serif;
 	color: #3ba8c0;
@@ -191,18 +216,20 @@ ul li
 	line-height: 27px;
 	border-bottom: 2px solid #3ba8c0;
 }
-
 .headerBlock.block1{
 	width: 342px;	
 }
+.headerBlock3{
+	font: 27px fira_sansbook, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	line-height: 27px;
+	height: 120px;
+	background-color: #48cbe8;
+	border-bottom: 17px solid #67dffa;
+}
 
-.avatar-info{
-	margin: 24px 0 46px 0;
-	position: relative;
-}
-.info-box{
-	padding-left:229px;
-}
+
 
 .headerInfo{
 	float: left;
@@ -212,14 +239,12 @@ ul li
 	line-height: 17px;
 
 }
-
 .textInfo{
 	margin: 0 0 15px 0;
 	font: 15px fira_sansbook, sans-serif;
 	color:#37424d;
 	line-height: 17px;
 }
-
 .skills{
 	font: 14px proxima_nova_condensedSBd, sans-serif;	
 	background-image: url("../images/skills.png");
@@ -229,18 +254,6 @@ ul li
 	margin: 0 8px 9px 0;
 
 }
-.block ul {
-	padding-left: 0;	
-	margin-top: 27px;
-	margin-bottom: 0;
-	list-style: none;
-}
-
-#imgWork{
-	float: left;
-	margin-left: 58px;
-}
-
 .paragraph {
 	padding-left: 124px;
 	background-position: 58px center;
@@ -257,14 +270,12 @@ ul li
 	 background-image: url("../images/course.png");
 	 background-repeat: no-repeat;
 }
-
 .headerParagraph{
 	font: 17px fira_sansbook, sans-serif;
 	color: #4a545d;	
 	line-height: 17px;
 	word-wrap: normal;
 }
-
 .textParagraph{
 	font: 15px fira_sanslight, sans-serif;
 	color: #4a545d;	
@@ -273,9 +284,85 @@ ul li
 	line-height: 15px;
 	word-wrap: normal;
 }
-#block2{
-	margin: 26px 0 82px 0;
+
+
+
+.block3{
+	padding:49px 30px 198px 125px;
 }
+
+.clientContact{
+	float: left;
+	margin:0 18px 17px 0;
+	width: 190px;
+}
+.clientMessage{
+	margin:0 18px 17px 0;
+	width: 400px;
+}
+.clientContact{
+	float: left;
+	margin:0 18px 17px 0;
+	width: 190px;
+}
+
+.nameInputForm {
+	font: 19px fira_sanslight, sans-serif;
+	color: #959aa8;	
+	line-height: 19px;
+	margin: 0 0 7px 0;
+
+}
+.inputForm {
+	font: 12px fira_sanslight, sans-serif;
+	color: #48cbe8;	
+	line-height: 12px;
+	background-color: #fbfcfd;
+	border-radius: 2px ;
+	border: 1px solid #48cbe8;
+	margin: 0 0 17px 0;
+	padding: 13px 14px 13px 14px;
+}
+
+.inputForm.message{
+	height: 182px;	
+}
+.inputForm.captcha{
+	height: 77px;
+	float: left;
+	width: 160px;
+	margin:0 18px 17px 0;
+	padding: 0;
+}
+.inputForm.captcha.inputCode{
+	height: 12px;
+	margin: 18px 0 18px 0;
+	padding: 9px;
+}
+.buttonAll{
+	clear: both;
+}
+.button{
+	padding: 7px 0 7px 0;
+	text-align: center;
+	border-radius: 2px;
+	font: 19px fira_sansbook, sans-serif;
+	color: #ffffff;	
+	line-height: 19px;	
+	margin:0 140px 0 0;
+	float: left;
+}
+
+.button.send{	
+	width: 136px;
+	background-color: #48cbe8;	
+}
+.button.clear{
+	width: 124px;
+	background-color: #849db5;	
+	margin: 0;
+}
+/*-------------------------footer----------------------------------*/
 footer {
 	height: 33px;
 	padding:23px 0px 23px 0px;
@@ -284,7 +371,6 @@ footer {
 	background-position: center top; 	
 	background-repeat: no-repeat;
 }
-
 .inFooter {
 	width: 1200px;
 	margin: 0 auto;
@@ -295,7 +381,6 @@ footer {
 	padding-left: 54px;
 
 }
-
 .copyright {
 	margin: 0;
 	font: 13px fira_sanslight, sans-serif;
