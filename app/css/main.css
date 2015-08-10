@@ -1,11 +1,16 @@
 html{
 	background-image: url("../images/comppattern2.png");
+	min-height: 100%;
 }
-
 
 .browsehappy{
 	font: 23px fira_sanslight, sans-serif;
 }
+
+body{
+	min-height: 100%;	
+}
+
 /*-------------------------header----------------------------------*/
 header{
 	height: 47px;	
@@ -13,6 +18,7 @@ header{
 	background:url("../images/line.png") #eff3f7;
 	background-position: center bottom; 	
 	background-repeat: no-repeat;
+	min-width: 1200px;
 }
 
 .link{
@@ -61,10 +67,15 @@ header{
 	background:url("../images/github2.png");
 }
 
+
 .wrapper{
-	padding:39px 0 39px 0;
-	margin: 0 auto;
+	overflow: hidden;
+	padding:157px 0 120px 0;
+	margin: -117px auto -80px;
 	width: 1200px;
+	min-height: 100%;
+	min-width:1200px;
+	height: auto !important;
 }
 .wrapperLeft {
 	width: 250px;
@@ -164,7 +175,7 @@ ul li
 }
 
 /*-------------------------wrapperRight----------------------------------*/
-/*-----------for all pages----------------*/
+
 .wrapperRight{
 	width: 650px;
 	margin-left: 430px;
@@ -174,9 +185,13 @@ ul li
 	width: 650px;
 	background-color: #eff3f7;
 	padding-bottom: 22px;
-	margin-bottom: 26px;
 	border-radius: 3px 3px 0 0;
+	padding-bottom: 45px;
+	margin-bottom: 26px;
 }
+.block:last-child{
+	margin-bottom: 0;
+} 
 .block ul {
 	padding-left: 0;	
 	margin-top: 27px;
@@ -216,21 +231,26 @@ ul li
 	line-height: 27px;
 	border-bottom: 2px solid #3ba8c0;
 }
-.headerBlock.block1{
+.headerBlock.basicInfo{
 	width: 342px;	
 }
-.headerBlock3{
-	font: 27px fira_sansbook, sans-serif;
+.headerBlock.newClient{
+	width: 650px;
 	color: #ffffff;
-	text-align: center;
-	line-height: 27px;
-	height: 120px;
 	background-color: #48cbe8;
 	border-bottom: 17px solid #67dffa;
+	padding: 46px 0 46px 0;
 }
-
-
-
+.headerBlock4{	
+	font: 40px fira_sansbook, sans-serif;
+	color: #ffffff;
+	background-color: #48cbe8;
+	border-bottom: 15px solid #67dffa;
+	padding: 26px 0 26px 0;
+	text-align: center;
+	margin:0 0 28px 0;
+	line-height: 40px;
+}
 .headerInfo{
 	float: left;
 	margin: 0 21px 15px 0;
@@ -257,6 +277,10 @@ ul li
 .paragraph {
 	padding-left: 124px;
 	background-position: 58px center;
+	margin-bottom: 27px;
+}
+.paragraph:last-child{
+	margin-bottom: 0;
 }
 .paragraph.work {
  	background-image: url("../images/work.png");
@@ -280,14 +304,11 @@ ul li
 	font: 15px fira_sanslight, sans-serif;
 	color: #4a545d;	
 	margin-top: 4px;
-	margin-bottom: 24px;
 	line-height: 15px;
 	word-wrap: normal;
 }
 
-
-
-.block3{
+.inBlock3{
 	padding:49px 30px 198px 125px;
 }
 
@@ -345,7 +366,6 @@ ul li
 .button{
 	padding: 7px 0 7px 0;
 	text-align: center;
-	border-radius: 2px;
 	font: 19px fira_sansbook, sans-serif;
 	color: #ffffff;	
 	line-height: 19px;	
@@ -355,13 +375,54 @@ ul li
 
 .button.send{	
 	width: 136px;
-	background-color: #48cbe8;	
+	background-image: url("../images/send.png");	
 }
 .button.clear{
 	width: 124px;
-	background-color: #849db5;	
+	background-image: url("../images/clear.png");
 	margin: 0;
 }
+
+.block4{
+	margin: 0 305px 0 305px;
+	background-color: #eff3f7;
+	width: 590px;
+	padding: 0 0 23px 0;
+}
+
+.paragraphBlock4{
+	font: 36px fira_sanslight, sans-serif;
+	line-height: 36px;
+	text-align: center;
+	color: #959aa8;
+	margin:0px;
+
+}
+.textBlock4{
+	font: 17px fira_sanslight, sans-serif;
+	line-height: 17px;
+	text-align: center;
+	color: #48cbe8;
+	width: 422px;
+	background-color: #ffffff;
+	border-radius: 2px ;
+	border: 1px solid #48cbe8;
+	margin:20px 83px 24px 83px;
+	padding: 21px 0 21px 0;
+}
+
+.buttonLogin{
+	padding: 9px 0 9px 0;
+	text-align: center;
+	font: 36px fira_sansbook, sans-serif;
+	line-height: 36px;
+	color: #ffffff;
+	background-image: url("../images/login.png");
+	width: 226px;
+	border-radius: 3px;
+	margin:10px 182px 0px 182px;
+}
+
 /*-------------------------footer----------------------------------*/
 footer {
 	height: 33px;
@@ -370,16 +431,24 @@ footer {
 	background:url("../images/line.png") #eff3f7;
 	background-position: center top; 	
 	background-repeat: no-repeat;
+	min-width: 1200px;
 }
 .inFooter {
 	width: 1200px;
 	margin: 0 auto;
 }
 .login {
+	width: 26px;
+	height: 32px;
 	display: block;
 	float: left;
-	padding-left: 54px;
-
+	margin-left: 54px;
+	background-image:url("../images/login-close.png");
+	background-repeat: no-repeat;
+}
+.login:hover{	
+	background-image:url("../images/login-open.png");
+	background-repeat: no-repeat;
 }
 .copyright {
 	margin: 0;
