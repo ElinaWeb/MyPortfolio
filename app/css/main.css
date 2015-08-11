@@ -23,6 +23,7 @@ header{
 }
 
 .link{
+	overflow: hidden;
 	width: 1200px;
 	margin: 0 auto;
 }
@@ -78,6 +79,11 @@ header{
 	height: auto !important;
 	box-sizing: border-box;
 }
+
+.wrapper.nopaddingForHeader{
+	padding:20px 0 120px 0;
+}
+
 .wrapperLeft {
 	width: 250px;
 	margin: 40px 0 0 120px;
@@ -109,10 +115,19 @@ ul li
 	text-decoration:none;
 
 }
+.noselectedMenu {
+	color: #959aa8;
+	font: 21px fira_sansbook, sans-serif;
+	line-height: 21px;
+	padding: 25px 0px 25px 28px;
+}
 
 .menu ul li:first-child a{
 	border-top: none;
 	border-radius: 3px 3px 0 0;
+}
+.menu ul li:last-child a{
+	border-radius: 0 0 3px 3px;
 }
 
 .menu ul li a.noselectedMenu:hover{
@@ -127,17 +142,10 @@ ul li
 	line-height: 23px;
 	padding: 24px 0px 24px 28px;
 }
-.noselectedMenu {
-	color: #959aa8;
-	font: 21px fira_sansbook, sans-serif;
-	line-height: 21px;
-	padding: 25px 0px 25px 28px;
-}
+
 
 /*-------------------------contacts----------------------------------*/
-.contacts{
-	border-radius: 3px 3px 0 0;
-}
+
 .contactsHeader {
 	color: #fbfcfd;
 	background-color: #3ba8c0;
@@ -146,6 +154,7 @@ ul li
 	padding-left: 21px;
 	line-height: 21px;
 	padding: 10px 0px 10px 21px;
+	border-radius: 3px 3px 0 0;
 }
 .contact {
 	display: block;
@@ -155,6 +164,7 @@ ul li
 	background-position: 42px center;
 	padding: 10px 0px 10px 83px;
 	text-decoration:none;
+	
 }
 .contact:hover{
 	text-decoration:underline;
@@ -173,6 +183,7 @@ ul li
 	background-color: #51daf8;
 	background-image: url("../images/skype.png");
  	background-repeat: no-repeat;
+ 	border-radius: 0 0 3px 3px;
 }
 
 /*-------------------------wrapperRight----------------------------------*/
@@ -243,7 +254,7 @@ ul li
 	border-bottom: 17px solid #67dffa;
 	padding: 46px 0 46px 0;
 }
-.headerBlock4{	
+.headerBlockLogin{	
 	font: 40px fira_sansbook, sans-serif;
 	color: #ffffff;
 	background-color: #48cbe8;
@@ -252,6 +263,7 @@ ul li
 	text-align: center;
 	margin:0 0 28px 0;
 	line-height: 40px;
+	border-radius: 2px 2px 0 0;
 }
 .headerInfo{
 	float: left;
@@ -310,7 +322,7 @@ ul li
 	word-wrap: normal;
 }
 
-.inBlock3{
+.inBlockClient{
 	padding:49px 30px 198px 125px;
 }
 
@@ -385,13 +397,15 @@ ul li
 	margin: 0;
 }
 
-.block4{
-	margin: 0 305px 0 305px;
+.blockLogin{
+	margin: 0 auto;
 	background-color: #eff3f7;
 	width: 590px;
+	padding-bottom: 27px;
+	border-radius: 2px;
 }
 
-.paragraphBlock4{
+.paragraphBlockLogin{
 	font: 36px fira_sanslight, sans-serif;
 	line-height: 36px;
 	text-align: center;
@@ -399,14 +413,14 @@ ul li
 	margin:0px;
 
 }
-.textBlock4{
+.textBlockLogin{
 	font: 17px fira_sanslight, sans-serif;
 	line-height: 17px;
 	text-align: center;
 	color: #48cbe8;
 	width: 422px;
 	background-color: #ffffff;
-	border-radius: 2px ;
+	border-radius: 2px;
 	border: 1px solid #48cbe8;
 	margin:20px 83px 24px 83px;
 	padding: 21px 0 21px 0;
