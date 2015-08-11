@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -63,14 +64,13 @@
 						</div>						
 						<div>		
 							<p class="nameInputForm">Введите код, указанный на картинке</p>	
-							<div class="clientCaptcha">
-								<p class="inputForm captcha">ТУТ ДОЛЖНА БЫТЬ сaptcha</p>	
-								<p class="inputForm captcha inputCode">Введите код</p>
+							<div class="g-recaptcha" data-sitekey="6LcMFAsTAAAAACiZjW5xSEWJkNLwUDp2ALcuDMZK"></div>
+								<!--<p class="inputForm captcha"></p>		
+								<p class="inputForm captcha inputCode">Введите код</p>-->
 							</div>	
 							<div class="buttonAll">
-								<p class="button send">Отправить</p>
-								<p class="button clear">Очистить</p>
-
+								<input class="button send" type="submit" value="Отправить" />
+								<input class="button clear" type="reset" value="Очистить" />
 							</div>							
 						</div>
 					</div>	

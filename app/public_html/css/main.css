@@ -176,7 +176,7 @@ ul li
 }
 .contact.tel {
 	background-color: #48cbe8;
-	 background-image: url("../images/tel.png");
+	background-image: url("../images/tel.png");
  	background-repeat: no-repeat;
 }
 .contact.skype {
@@ -197,10 +197,11 @@ ul li
 .block{
 	width: 650px;
 	background-color: #eff3f7;
-	padding-bottom: 22px;
 	border-radius: 3px 3px 0 0;
 	padding-bottom: 45px;
 	margin-bottom: 26px;
+	padding-top: 22px;
+	overflow: hidden;
 }
 .block:last-child{
 	margin-bottom: 0;
@@ -237,22 +238,20 @@ ul li
 .headerBlock{
 	font: 27px fira_sansbook, sans-serif;
 	color: #3ba8c0;
-	padding: 20px 0 20px 0;
-	text-align: center;
-	margin:0;
-	width: 209px;
+	padding: 0 0 0 22px;
 	line-height: 27px;
 	border-bottom: 2px solid #3ba8c0;
+	display: inline;
 }
-.headerBlock.basicInfo{
-	width: 342px;	
-}
+
 .headerBlock.newClient{
-	width: 650px;
-	color: #ffffff;
-	background-color: #48cbe8;
-	border-bottom: 17px solid #67dffa;
-	padding: 46px 0 46px 0;
+    color: #ffffff;
+    background-color: #48cbe8;
+    border-bottom: 17px solid #67dffa;
+    padding: 46px 0 46px 0px;
+    display: block;
+    margin-top: -22px;
+    text-align: center;
 }
 .headerBlockLogin{	
 	font: 40px fira_sansbook, sans-serif;
@@ -280,6 +279,10 @@ ul li
 	line-height: 17px;
 }
 .skills{
+	margin-top: 0 !important;;
+
+}
+.skill{
 	font: 14px proxima_nova_condensedSBd, sans-serif;	
 	background-image: url("../images/skills.png");
 	color: #ffffff;
@@ -321,7 +324,44 @@ ul li
 	line-height: 15px;
 	word-wrap: normal;
 }
+.works{
+	margin: 50px 20px 20px 20px;
+}
+.work{
+	margin:0 30px 44px 0px;
+	float:left;
+}
+.work:nth-child(3n){
+	margin-right: 0;
+}
+.imageWork{
+	height: 125px;
+	width: 179px;
+	border-radius: 2px ;
+	border: 1px solid #48cbe8;
+	margin: 0 0 10px 0;
+}
+.imageWork.add{
+	border:none;
+}
+.linkWork{
+ 	display:block;
+ 	font: 13px fira_sanslight, sans-serif;
+ 	color: #3ba8c0;
+ 	text-decoration:none;
+ 	text-align: center;
+}
+.infoWork{
+	font: 15px fira_sanslight, sans-serif;
+	line-height: 20px;
+	height: 40px;
+	width: 179px;
+	text-align: center;
+	color: #4a545d;
+	margin:15px 0 0 0;
+	overflow: hidden; 
 
+}
 .inBlockClient{
 	padding:49px 30px 198px 125px;
 }
@@ -334,11 +374,6 @@ ul li
 .clientMessage{
 	margin:0 18px 17px 0;
 	width: 400px;
-}
-.clientContact{
-	float: left;
-	margin:0 18px 17px 0;
-	width: 190px;
 }
 
 .nameInputForm {
@@ -362,7 +397,12 @@ ul li
 .inputForm.message{
 	height: 182px;	
 }
-.inputForm.captcha{
+.g-recaptcha{
+	margin-bottom: 20px;
+
+}
+}
+/*.inputForm.captcha{
 	height: 77px;
 	float: left;
 	width: 160px;
@@ -373,7 +413,7 @@ ul li
 	height: 12px;
 	margin: 18px 0 18px 0;
 	padding: 9px;
-}
+}*/
 .buttonAll{
 	clear: both;
 }
