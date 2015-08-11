@@ -12,14 +12,14 @@ body{
 }
 
 /*-------------------------header----------------------------------*/
-header{
+.header{
 	height: 47px;	
 	padding: 35px 0 35px 0;
 	background:url("../images/line.png") #eff3f7;
 	background-position: center bottom; 	
 	background-repeat: no-repeat;
 	min-width:1200px;
-	margin-bottom: -117px;
+	margin-bottom: 20px;
 }
 
 .link{
@@ -27,18 +27,22 @@ header{
 	width: 1200px;
 	margin: 0 auto;
 }
-
+.linkLogo{
+	float: left;
+}
 .logo{
 	
 	background-position: left center; 
 }
 
 .social {
+	display: block;
+	float: right;
 	width: 47px;
 	height: 47px;
-	display: block;
 	margin-left: 25px;
-	float: right;
+	text-indent: -99999px;
+
 }
 .vk {	
 	background:url("../images/vk1.png");
@@ -69,10 +73,10 @@ header{
 	background:url("../images/github2.png");
 }
 
-
+/*-------------------------wrapper----------------------------------*/
 .wrapper{
 	overflow: hidden;
-	padding:157px 0 120px 0;
+	padding:0px 0 120px 0;
 	margin: 0 auto;
 	min-height: 100%;
 	width:1200px;
@@ -83,7 +87,7 @@ header{
 .wrapper.nopaddingForHeader{
 	padding:20px 0 120px 0;
 }
-
+/*-------------------------wrapperLeft----------------------------------*/
 .wrapperLeft {
 	width: 250px;
 	margin: 40px 0 0 120px;
@@ -91,7 +95,6 @@ header{
 	background-position: left center; 	
 }
 
-/*-------------------------for all----------------------------------*/
 ul{
 	padding: 0;
 	margin: 0;
@@ -102,7 +105,7 @@ ul li
 	list-style: none;
 }
 
-/*-------------------------menu----------------------------------*/
+/*---------------menu--------------------*/
 .menu{
 	background:#eff3f7;
 	margin-bottom: 23px;
@@ -144,7 +147,7 @@ ul li
 }
 
 
-/*-------------------------contacts----------------------------------*/
+/*-----------contacts--------------------*/
 
 .contactsHeader {
 	color: #fbfcfd;
@@ -212,7 +215,15 @@ ul li
 	margin-bottom: 0;
 	list-style: none;
 }
-
+.headerBlock{
+	font: 27px fira_sansbook, sans-serif;
+	color: #3ba8c0;
+	padding: 0 0 0 22px;
+	line-height: 27px;
+	border-bottom: 2px solid #3ba8c0;
+	display: inline-block;
+}
+/*---------index----------*/
 .avatar-info{
 	margin: 24px 0 46px 0;
 	position: relative;
@@ -235,35 +246,7 @@ ul li
 .info-box{
 	padding-left:229px;
 }
-.headerBlock{
-	font: 27px fira_sansbook, sans-serif;
-	color: #3ba8c0;
-	padding: 0 0 0 22px;
-	line-height: 27px;
-	border-bottom: 2px solid #3ba8c0;
-	display: inline;
-}
 
-.headerBlock.newClient{
-    color: #ffffff;
-    background-color: #48cbe8;
-    border-bottom: 17px solid #67dffa;
-    padding: 46px 0 46px 0px;
-    display: block;
-    margin-top: -22px;
-    text-align: center;
-}
-.headerBlockLogin{	
-	font: 40px fira_sansbook, sans-serif;
-	color: #ffffff;
-	background-color: #48cbe8;
-	border-bottom: 15px solid #67dffa;
-	padding: 26px 0 26px 0;
-	text-align: center;
-	margin:0 0 28px 0;
-	line-height: 40px;
-	border-radius: 2px 2px 0 0;
-}
 .headerInfo{
 	float: left;
 	margin: 0 21px 15px 0;
@@ -324,6 +307,7 @@ ul li
 	line-height: 15px;
 	word-wrap: normal;
 }
+/*---------myWorks----------*/
 .works{
 	margin: 50px 20px 20px 20px;
 }
@@ -354,13 +338,22 @@ ul li
 .infoWork{
 	font: 15px fira_sanslight, sans-serif;
 	line-height: 20px;
-	height: 40px;
 	width: 179px;
 	text-align: center;
 	color: #4a545d;
 	margin:15px 0 0 0;
 	overflow: hidden; 
 
+}
+/*---------contactWithMe----------*/
+.headerBlock.newClient{
+    color: #ffffff;
+    background-color: #48cbe8;
+    border-bottom: 17px solid #67dffa;
+    padding: 46px 0 46px 0px;
+    display: block;
+    margin-top: -22px;
+    text-align: center;
 }
 .inBlockClient{
 	padding:49px 30px 198px 125px;
@@ -401,19 +394,7 @@ ul li
 	margin-bottom: 20px;
 
 }
-}
-/*.inputForm.captcha{
-	height: 77px;
-	float: left;
-	width: 160px;
-	margin:0 18px 17px 0;
-	padding: 0;
-}
-.inputForm.captcha.inputCode{
-	height: 12px;
-	margin: 18px 0 18px 0;
-	padding: 9px;
-}*/
+
 .buttonAll{
 	clear: both;
 }
@@ -425,6 +406,7 @@ ul li
 	line-height: 19px;	
 	margin:0 140px 0 0;
 	float: left;
+	border: none;
 }
 
 .button.send{	
@@ -436,7 +418,7 @@ ul li
 	background-image: url("../images/clear.png");
 	margin: 0;
 }
-
+/*---------login----------*/
 .blockLogin{
 	margin: 0 auto;
 	background-color: #eff3f7;
@@ -444,7 +426,17 @@ ul li
 	padding-bottom: 27px;
 	border-radius: 2px;
 }
-
+.headerBlockLogin{	
+	font: 40px fira_sansbook, sans-serif;
+	color: #ffffff;
+	background-color: #48cbe8;
+	border-bottom: 15px solid #67dffa;
+	padding: 26px 0 26px 0;
+	text-align: center;
+	margin:0 0 28px 0;
+	line-height: 40px;
+	border-radius: 2px 2px 0 0;
+}
 .paragraphBlockLogin{
 	font: 36px fira_sanslight, sans-serif;
 	line-height: 36px;
@@ -465,8 +457,7 @@ ul li
 	margin:20px 83px 24px 83px;
 	padding: 21px 0 21px 0;
 }
-
-.buttonLogin{
+.Enter{
 	padding: 9px 0 9px 0;
 	text-align: center;
 	font: 36px fira_sansbook, sans-serif;
@@ -479,7 +470,7 @@ ul li
 }
 
 /*-------------------------footer----------------------------------*/
-footer {
+.footer {
 	height: 33px;
 	padding:23px 0px 23px 0px;
 	clear: both;

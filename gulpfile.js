@@ -10,9 +10,9 @@ gulp.task('server',function(){
 })
 gulp.task('watch',function(){
 	gulp.watch([
-		'app/*.html',
-		'app/js/*.js',
-		'app/css/*.css'
+		'app/public_html/*.html',
+		'app/public_html/js/*.js',
+		'app/public_html/css/*.css'
 		]).on('change',browserSync.reload);
 });
 gulp.task('default',['server','watch']);
