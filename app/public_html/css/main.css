@@ -82,6 +82,7 @@ body{
 	width:1200px;
 	height: auto !important;
 	box-sizing: border-box;
+	
 }
 
 .wrapper.nopaddingForHeader{
@@ -345,6 +346,47 @@ ul li
 	overflow: hidden; 
 
 }
+/*-------------------------addProject----------------------------------*/
+.headerBlock.newProject{
+	font: 25px fira_sansregular, sans-serif;
+    color: #ffffff;
+    background-color: #48cbe8;
+    border-bottom: 9px solid #67dffa;
+    padding: 9px 0 9px 0px;
+    display: block;
+    margin-top: -22px;
+    text-align: center;
+}
+.inBlockAddProject{
+	margin: 12px 20px 22px 20px;
+}
+#new-project-popup{
+	width:  365px;
+	height: 493px;	
+	background-color: #eff3f7;
+	display:none; 
+}
+
+.nameInputForm.new-project-nameInputForm{
+	margin:0 0 10px 0;
+}
+.inputForm.new-project-inputForm{
+	margin:0 0 15px 0;
+}
+.button.send.new-project-button{
+	margin-left:92px;
+}
+.download-img{
+	float: left;
+}
+#download-file{
+	display:none;
+}
+.label{
+  	padding: 11px 8px 11px 8px;
+	background-color: #48cbe8;
+	
+}
 /*---------contactWithMe----------*/
 .headerBlock.newClient{
     color: #ffffff;
@@ -363,6 +405,7 @@ ul li
 	float: left;
 	margin:0 18px 17px 0;
 	width: 190px;
+	
 }
 .clientMessage{
 	margin:0 18px 17px 0;
@@ -385,6 +428,8 @@ ul li
 	border: 1px solid #48cbe8;
 	margin: 0 0 17px 0;
 	padding: 13px 14px 13px 14px;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 .inputForm.message{
@@ -410,7 +455,7 @@ ul li
 }
 
 .button.send{	
-	width: 136px;
+	width: 140px;
 	background-image: url("../images/send.png");	
 }
 .button.clear{

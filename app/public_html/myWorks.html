@@ -72,17 +72,52 @@
 							<p class="infoWork">Информация о проекте Информация о проекте</p>
 						</li>
 						<li class="work">
-							<img class="imageWork add"src="images/add-project.png">
+							<a id="add-new-item" href="#"><img class="imageWork add" src="images/add-project.png" alt="Добавить проект"></a>
 						</li>
 					</ul>					
 				</div>
+			</div>			
 			</div>
-		</div>	
+		</div>
+		<div id="new-project-popup">
+				<p class="headerBlock newProject">Добавление проекта</p>
+				<div class="inBlockAddProject">
+					<p class="nameInputForm new-project-nameInputForm">Название проекта</p>		
+					<input class="inputForm new-project-inputForm" required placeholder="Введите название проекта"/>
+					<p class="nameInputForm new-project-nameInputForm">Картинка проекта</p>	
+					<div class="inputForm new-project-inputForm">
+						<p class="download-img">Загрузите изображение</p>	
+						<input id="download-file" required type="file"/><label for="download-file"><img class="label"  src="images/label.png" alt="Загрузить картинку"></label>
+					</div>
+					<p class="nameInputForm new-project-nameInputForm">URL проекта</p>		
+					<input class="inputForm new-project-inputForm" required type="url" placeholder="Добавьте ссылку"/>
+					<p class="nameInputForm new-project-nameInputForm">Описание</p>		
+					<input class="inputForm new-project-inputForm" required placeholder="Пара слов о Вашем проекте"/>
+					<input class="button send new-project-button" type="submit" value="Отправить"/>
+				</div>
+			</div>
 		<footer class="footer">		
 			<div class="inFooter">
 				<a  class="login" href="/login.html"></a>
 				<p class="copyright">&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>			
 			</div>	
 		</footer>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="bower/bpopup/jquery.bpopup.js"></script>
+		<script type="text/javascript">
+			var _showModal=function(){
+				$('#new-project-popup').bPopup({
+					speed:100,
+					transition:'slideDown',
+					onClose: function(){
+						this.find('.form')
+						.trigger("reset");
+					}
+				});
+			}
+			$('#add-new-item').on('click',_showModal);
+
+		</script>
 	</body>
+
 </html>
