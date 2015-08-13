@@ -1,0 +1,83 @@
+.avatar-info{
+	margin: 24px 0 46px 0;
+	position: relative;
+}
+
+.avatar-box{
+	position: absolute;
+	width: 142px;
+	height: 142px;
+	top:50%;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border:5px solid #3ba8c0;
+	margin:-71px 0 0 55px;
+}
+.avatar{
+	width: 100%;
+}
+
+.info-box{
+	padding-left:229px;
+}
+
+.headerInfo{
+	float: left;
+	margin: 0 21px 15px 0;
+	font: 17px fira_sansmedium, sans-serif;
+	color:#4a545d;
+	line-height: 17px;
+
+}
+.textInfo{
+	margin: 0 0 15px 0;
+	font: 15px fira_sansbook, sans-serif;
+	color:#37424d;
+	line-height: 17px;
+}
+.skills{
+	margin-top: 0 !important;;
+
+}
+.skill{
+	font: 14px proxima_nova_condensedSBd, sans-serif;	
+	background-image: url("../images/skills.png");
+	color: #ffffff;
+	display:inline-block; 
+	padding: 3px 14px 3px 14px;
+	margin: 0 8px 9px 0;
+
+}
+.paragraph {
+	padding-left: 124px;
+	background-position: 58px center;
+	margin-bottom: 27px;
+}
+.paragraph:last-child{
+	margin-bottom: 0;
+}
+.paragraph.work {
+ 	background-image: url("../images/work.png");
+ 	background-repeat: no-repeat;
+}
+.paragraph.study {
+	 background-image: url("../images/study.png");
+	 background-repeat: no-repeat;
+}
+.paragraph.course {
+	 background-image: url("../images/course.png");
+	 background-repeat: no-repeat;
+}
+.headerParagraph{
+	font: 17px fira_sansbook, sans-serif;
+	color: #4a545d;	
+	line-height: 17px;
+	word-wrap: normal;
+}
+.textParagraph{
+	font: 15px fira_sanslight, sans-serif;
+	color: #4a545d;	
+	margin-top: 4px;
+	line-height: 15px;
+	word-wrap: normal;
+}

@@ -1,0 +1,55 @@
+.blockLogin{
+	margin: 0 auto;
+	background-color: #eff3f7;
+	width: 590px;
+	padding-bottom: 27px;
+	border-radius: 2px;
+}
+.headerBlockLogin{	
+	font: 40px fira_sansbook, sans-serif;
+	color: #ffffff;
+	background-color: #48cbe8;
+	border-bottom: 15px solid #67dffa;
+	padding: 26px 0 26px 0;
+	text-align: center;
+	margin:0 0 28px 0;
+	line-height: 40px;
+	border-radius: 2px 2px 0 0;
+}
+.paragraphBlockLogin{
+	font: 36px fira_sanslight, sans-serif;
+	line-height: 36px;
+	text-align: center;
+	color: #959aa8;
+	margin:0px;
+
+}
+.textBlockLogin{
+	font: 17px fira_sanslight, sans-serif;
+	line-height: 17px;
+	text-align: center;
+	color: #48cbe8;
+	width: 422px;
+	background-color: #ffffff;
+	border-radius: 2px;
+	border: 1px solid #48cbe8;
+	margin:20px 83px 24px 83px;
+	padding: 21px 0 21px 0;
+}
+.Enter{
+	padding: 9px 0 9px 0;
+	text-align: center;
+	font: 36px fira_sansbook, sans-serif;
+	line-height: 36px;
+	color: #ffffff;
+	background-image: url("../images/login.png");
+	width: 226px;
+	border-radius: 3px;
+	margin:10px 182px 0px 182px;
+}
+input::-webkit-input-placeholder {
+	color: #48cbe8;
+}
+input:-moz-placeholder {
+	color: #48cbe8;
+}

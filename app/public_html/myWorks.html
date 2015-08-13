@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="font/fira/fira.css" />
 		<link rel="stylesheet" type="text/css" href="font/Proxima-Nova/ProximaNova.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/myWorks.css" />
 		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	</head>
@@ -80,20 +81,23 @@
 			</div>
 		</div>
 		<div id="new-project-popup">
-				<p class="headerBlock newProject">Добавление проекта</p>
-				<div class="inBlockAddProject">
-					<p class="nameInputForm new-project-nameInputForm">Название проекта</p>		
-					<input class="inputForm new-project-inputForm" required placeholder="Введите название проекта"/>
-					<p class="nameInputForm new-project-nameInputForm">Картинка проекта</p>	
-					<div class="inputForm new-project-inputForm">
-						<p class="download-img">Загрузите изображение</p>	
-						<input id="download-file" required type="file"/><label for="download-file"><img class="label"  src="images/label.png" alt="Загрузить картинку"></label>
-					</div>
-					<p class="nameInputForm new-project-nameInputForm">URL проекта</p>		
-					<input class="inputForm new-project-inputForm" required type="url" placeholder="Добавьте ссылку"/>
-					<p class="nameInputForm new-project-nameInputForm">Описание</p>		
-					<input class="inputForm new-project-inputForm" required placeholder="Пара слов о Вашем проекте"/>
-					<input class="button send new-project-button" type="submit" value="Отправить"/>
+			<div class="headerNewProject">
+				Добавление проекта
+				<button type="button" class="b-close"></button>
+			</div>
+			<div class="inBlockAddProject">								
+				<p class="new-project-nameInputForm">Название проекта</p>		
+				<input class="new-project-inputForm" required placeholder="Введите название проекта"/>
+				<p class="new-project-nameInputForm">Картинка проекта</p>	
+				<div class="new-project-inputForm download-img">
+					<p class="download-name">Загрузите изображение</p>	
+					<input id="download-file" required type="file"/><label for="download-file"><img class="label"  src="images/label.png" alt="Загрузить картинку"></label>
+				</div>
+				<p class="new-project-nameInputForm">URL проекта</p>		
+				<input class="new-project-inputForm" required type="url" placeholder="Добавьте ссылку"/>
+				<p class="new-project-nameInputForm">Описание</p>		
+				<input class="new-project-inputForm description" required placeholder="Пара слов о Вашем проекте"/>
+				<input class="new-project-button" type="submit" value="Отправить"/>
 				</div>
 			</div>
 		<footer class="footer">		
@@ -104,20 +108,7 @@
 		</footer>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="bower/bpopup/jquery.bpopup.js"></script>
-		<script type="text/javascript">
-			var _showModal=function(){
-				$('#new-project-popup').bPopup({
-					speed:100,
-					transition:'slideDown',
-					onClose: function(){
-						this.find('.form')
-						.trigger("reset");
-					}
-				});
-			}
-			$('#add-new-item').on('click',_showModal);
-
-		</script>
+		<script type="text/javascript" src="js/add-project.js"></script>
 	</body>
 
 </html>

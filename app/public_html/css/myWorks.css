@@ -1,0 +1,133 @@
+.works{
+	margin: 50px 20px 20px 20px;
+}
+.work{
+	margin:0 30px 44px 0px;
+	float:left;
+}
+.work:nth-child(3n){
+	margin-right: 0;
+}
+.imageWork{
+	height: 125px;
+	width: 179px;
+	border-radius: 2px ;
+	border: 1px solid #48cbe8;
+	margin: 0 0 10px 0;
+}
+.imageWork.add{
+	border:none;
+}
+.linkWork{
+ 	display:block;
+ 	font: 13px fira_sanslight, sans-serif;
+ 	color: #3ba8c0;
+ 	text-decoration:none;
+ 	text-align: center;
+}
+.infoWork{
+	font: 15px fira_sanslight, sans-serif;
+	line-height: 20px;
+	width: 179px;
+	text-align: center;
+	color: #4a545d;
+	margin:15px 0 0 0;
+	overflow: hidden; 
+
+}
+
+/*-------------------------addProject----------------------------------*/
+.headerNewProject{
+	font: 25px fira_sansregular, sans-serif;
+    color: #ffffff;
+    background-color: #48cbe8;
+    border-bottom: 9px solid #67dffa;
+    padding: 9px 0 9px 0px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+}
+
+.inBlockAddProject{
+	margin: 12px 20px 22px 20px;
+}
+#new-project-popup{
+	width:  365px;
+	background-color: #eff3f7;
+	display:none; 
+}
+
+.new-project-nameInputForm{  
+	font: 19px fira_sanslight, sans-serif;
+	color: #959aa8;	
+	line-height: 19px;
+	margin:0 0 10px 0;
+
+}
+.new-project-inputForm{           
+	margin:0 0 15px 0;
+	height: 42px;
+	font: 13px fira_sanslight, sans-serif;
+	color: #48cbe8;	
+	line-height: 12px;
+	background-color: #fbfcfd;
+	border-radius: 2px ;
+	border: 1px solid #48cbe8;
+	padding: 14px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+input::-webkit-input-placeholder {
+	color: #48cbe8;
+}
+input:-moz-placeholder {
+	color: #48cbe8;
+}
+
+.new-project-inputForm.description{ 
+	height: 110px;
+}
+
+.new-project-inputForm.download-img{
+	padding:0;
+	position: relative;
+}
+.download-name{
+	margin:12px 14px 12px 14px; 
+	position: absolute;
+	left: 0;
+}
+#download-file{
+	display:none;
+}
+.new-project-inputForm.download-img .label{
+  	padding: 8px;
+	background-color: #48cbe8;
+	position: absolute;
+	right: 0;
+	
+}
+.b-close{
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	background-image: url("../images/close.png");	
+	position: absolute;
+	right: 12px;
+	outline: none;
+}
+.new-project-button{ 
+	padding: 7px 0 7px 0;
+	text-align: center;
+	font: 19px fira_sansbook, sans-serif;
+	color: #ffffff;	
+	line-height: 19px;	
+	margin:0 140px 0 92px;
+	border: none;
+	width: 140px;
+	background-image: url("../images/send.png");
+}

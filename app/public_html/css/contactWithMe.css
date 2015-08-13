@@ -1,0 +1,80 @@
+.headerBlock.newClient{
+    color: #ffffff;
+    background-color: #48cbe8;
+    border-bottom: 17px solid #67dffa;
+    padding: 46px 0 46px 0px;
+    display: block;
+    margin-top: -22px;
+    text-align: center;
+}
+.inBlockClient{
+	padding:49px 30px 198px 125px;
+}
+
+.clientContact{
+	float: left;
+	margin:0 18px 17px 0;
+	width: 190px;
+	
+}
+.clientMessage{
+	margin:0 18px 17px 0;
+	width: 400px;
+}
+
+.nameInputForm {
+	font: 19px fira_sanslight, sans-serif;
+	color: #959aa8;	
+	line-height: 19px;
+	margin: 0 0 7px 0;
+
+}
+.inputForm {
+	font: 13px fira_sanslight, sans-serif;
+	color: #48cbe8;	
+	line-height: 12px;
+	background-color: #fbfcfd;
+	border-radius: 2px ;
+	border: 1px solid #48cbe8;
+	margin: 0 0 17px 0;
+	padding: 14px;
+	box-sizing: border-box;
+	width: 100%;
+}
+input::-webkit-input-placeholder {
+	color: #48cbe8;
+}
+input:-moz-placeholder {
+	color: #48cbe8;
+}
+.inputForm.message{
+	height: 182px;	
+}
+.g-recaptcha{
+	margin-bottom: 20px;
+
+}
+
+.buttonAll{
+	clear: both;
+}
+.button{
+	padding: 7px 0 7px 0;
+	text-align: center;
+	font: 19px fira_sansbook, sans-serif;
+	color: #ffffff;	
+	line-height: 19px;	
+	margin:0 140px 0 0;
+	float: left;
+	border: none;
+}
+
+.button.send{	
+	width: 140px;
+	background-image: url("../images/send.png");	
+}
+.button.clear{
+	width: 124px;
+	background-image: url("../images/clear.png");
+	margin: 0;
+}
