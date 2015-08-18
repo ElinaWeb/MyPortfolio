@@ -131,3 +131,54 @@ input:-moz-placeholder {
 	width: 140px;
 	background-image: url("../images/send.png");
 }
+/* _____________ // file upload _________ */
+.fileupload-wrapper {
+  width: 100%;
+  position: relative;
+}
+.fileupload-lable{
+	display: block;
+  width: 52px;
+  height: 41px;
+	position: absolute;
+  right: 0;
+	background: url("../images/label.png") 10px 7px no-repeat;
+	background-color: #48cbe8;
+	border-radius: 0 4px 4px 0;
+}
+.fileupload{ /* хак, взятый из html5boilerplate */
+	border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* _____________ // file upload end _________ */
+
+.qtip-mystyle{
+	background-color: #f97e76;
+	border-color: #f97e76;
+	font-family: 'Arial';
+	color: #ffffff;
+	font-size: 13px;
+}
+.has-error{
+	background-color: #fad2d1 !important;
+	border-color: #f97e76 !important;
+}
+.has-success{
+	background-color: none;
+	border-color: #3c763d;
+}
+
+.new-project-inputForm, .textarea{
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	font-size: 12px;
+	width: 100%;
+	padding: 12px 12px;
+}

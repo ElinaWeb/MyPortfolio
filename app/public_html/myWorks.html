@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru-RU">
 	<head>
@@ -9,9 +8,10 @@
 		<!--CSS-->
 		<link rel="stylesheet" type="text/css" href="font/fira/fira.css" />
 		<link rel="stylesheet" type="text/css" href="font/Proxima-Nova/ProximaNova.css" />
+		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/myWorks.css" />
-		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	</head>
 	<body>
@@ -80,26 +80,30 @@
 			</div>			
 			</div>
 		</div>
-		<div id="new-project-popup">
+		<form id="new-project-popup">
 			<div class="headerNewProject">
 				Добавление проекта
 				<button type="button" class="b-close"></button>
 			</div>
 			<div class="inBlockAddProject">								
 				<p class="new-project-nameInputForm">Название проекта</p>		
-				<input class="new-project-inputForm" required placeholder="Введите название проекта"/>
-				<p class="new-project-nameInputForm">Картинка проекта</p>	
-				<div class="new-project-inputForm download-img">
-					<p class="download-name">Загрузите изображение</p>	
-					<input id="download-file" required type="file"/><label for="download-file"><img class="label"  src="images/label.png" alt="Загрузить картинку"></label>
+				<input name="name-project" class="new-project-inputForm" required placeholder="Введите название проекта"  qtip-content="Введите название" qtip-position="left"/>
+				<div class="fileupload-wrapper" id="uploadfile">
+					<p class="new-project-nameInputForm">Картинка проекта</p>
+					<label class="fileupload-lable">
+						<input id="fileupload" class="fileupload" type="file" name="files[]">
+						<input id="fileurl" type="hidden" name="fileurl">
+					</label>
+						<input id="filename" type="text" class="new-project-inputForm" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" qtip-position="left">
 				</div>
+
 				<p class="new-project-nameInputForm">URL проекта</p>		
-				<input class="new-project-inputForm" required type="url" placeholder="Добавьте ссылку"/>
+				<textarea name="url-project" class="new-project-inputForm" required type="url" placeholder="Добавьте ссылку"  qtip-content="Ссылка на проект" qtip-position="left"></textarea> 
 				<p class="new-project-nameInputForm">Описание</p>		
-				<input class="new-project-inputForm description" required placeholder="Пара слов о Вашем проекте"/>
-				<input class="new-project-button" type="submit" value="Отправить"/>
+				<textarea name="description-project" class="new-project-inputForm description" required placeholder="Пара слов о Вашем проекте" qtip-content="Описание проекта" qtip-position="left"></textarea>
+				<button id="new-project-button" class="new-project-button" type="submit">Отправить</button>
 				</div>
-			</div>
+		</form>
 		<footer class="footer">		
 			<div class="inFooter">
 				<a  class="login" href="/login.html"></a>
@@ -108,6 +112,7 @@
 		</footer>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="bower/bpopup/jquery.bpopup.js"></script>
+		<script type="text/javascript" src="bower/qtip2/jquery.qtip.js"></script>
 		<script type="text/javascript" src="js/add-project.js"></script>
 	</body>
 
