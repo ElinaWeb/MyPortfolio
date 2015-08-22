@@ -9,9 +9,10 @@
 		<!--CSS-->
 		<link rel="stylesheet" type="text/css" href="font/fira/fira.css" />
 		<link rel="stylesheet" type="text/css" href="font/Proxima-Nova/ProximaNova.css" />
+		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/contactWithMe.css" />
-		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
@@ -49,38 +50,41 @@
 					</ul>
 				</div>
 			</div>
-			<div class="wrapperRight">	
+			<form id="contactWithMe" class="wrapperRight">	
 				<div class="block">
 					<p class="headerBlock newClient">У Вас интересный проект? Напишите мне</p>
 					<div class="inBlockClient">
 						<div class="clientContact">
 							<p class="nameInputForm">Имя</p>		
-							<input class="inputForm" type="text" placeholder="Как к Вам обращаться"/>
+							<input class="inputForm" type="text" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели имя" qtip-position="left"/>
 						</div>
 						<div class="clientContact">
 							<p class="nameInputForm">Email</p>		
-							<input class="inputForm" type="text" placeholder="Куда мне писать"/>	
+							<input class="inputForm" type="text" placeholder="Куда мне писать" qtip-content="Вы не ввели email" qtip-position="right"/>	
 						</div>
 						<div class="clientMessage">	
 							<p class="nameInputForm">Сообщение</p>		
-							<input class="inputForm message" type="text" placeholder="Кратко в чем суть"/>
+							<input class="inputForm message" type="text" placeholder="Кратко в чем суть" qtip-content="Ваш вопрос" qtip-position="left"/>
 						</div>						
 						<div>		
 							<div class="g-recaptcha" data-sitekey="6LcMFAsTAAAAACiZjW5xSEWJkNLwUDp2ALcuDMZK"></div>
 						</div>	
 						<div class="buttonAll">
-							<input class="button send" type="submit" value="Отправить" />
-							<input class="button clear" type="reset" value="Очистить" />
+							<input id="buttonSend" class="button send" type="submit" value="Отправить" />
+							<input id="buttonClear" class="button clear" type="reset" value="Очистить" />
 						</div>							
 						</div>
 					</div>	
 				</div>
-		</div>	
+			</form>	
 		<footer class="footer">	
 			<div class="inFooter">
 				<a  class="login" href="/login.html"></a>
 				<p class="copyright">&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>			
 			</div>	
 		</footer>
+		<script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="bower/qtip2/jquery.qtip.js"></script>
+		<script type="text/javascript" src="js/contactWithMe.js"></script>
 	</body>
 </html>

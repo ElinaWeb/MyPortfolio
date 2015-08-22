@@ -9,9 +9,10 @@
 		<!--CSS-->
 		<link rel="stylesheet" type="text/css" href="font/fira/fira.css" />
 		<link rel="stylesheet" type="text/css" href="font/Proxima-Nova/ProximaNova.css" />
+		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/login.css" />
-		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">		
 	</head>
 	<body>
@@ -20,20 +21,23 @@
 		Пожалуйста, <a href="http://browsehappy.com/">обновите</a> его.</p>
 		<![endif]-->
 
-		<div class="wrapper nopaddingForHeader">	
+		<form id="loginForm" class="wrapper nopaddingForHeader">	
 			<div class="blockLogin">
 				<p class="headerBlockLogin">Авторизуйтесь</p>
 				<p class="paragraphBlockLogin">Логин</p>
-				<input class="textBlockLogin" placeholder="Введите логин">
+				<input class="textBlockLogin" placeholder="Введите логин" qtip-content="Введите логин" qtip-position="left">
 				<p class="paragraphBlockLogin">Пароль</p>
-				<input type="password"p class="textBlockLogin" placeholder="Введите пароль">
-				<input type="submit" class="Enter" value="Войти">
+				<input type="password"p class="textBlockLogin" placeholder="Введите пароль" qtip-content="Введите пароль" qtip-position="left">
+				<button id="Enter" type="submit" class="Enter">Войти</button> 
 			</div>	
-		</div>	
+		</form>	
 		<footer class="footer">		
 			<div class="inFooter">
 				<p class="copyright">&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>			
 			</div>	
 		</footer>
+		<script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="bower/qtip2/jquery.qtip.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
 	</body>
 </html>
